@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İclal Dere</title>
+    <link id="theme-stylesheet" rel="stylesheet" href="static/myApp/css/dark-theme.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Consistent Font Sizes */
+        h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+
+        p, nav ul li a, button {
+            font-size: 1.2em;
+        }
+
+        /* General Styles */
+        header {
+            position: relative;
+            text-align: center;
+            padding: 50px 0;
+            background-size: cover;
+            color: #ffffff;
+        }
+
+        .theme-toggle-container {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            z-index: 1000;
+        }
+
+        .theme-toggle {
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-size: 24px;
+            color: #ffffff;
+        }
+
+        nav {
+            padding: 10px 0;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        section {
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+
+        /* Scrollable Panel Styles */
+        #projects {
+            padding: 20px;
+        }
+
+         .projects-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .project-card {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 10px;
+            width: 300px;
+            min-width: 300px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: scale(1.05);
+        }
+
+        .project-card a {
+            text-decoration: none;
+            color: #007bff;
+            font-weight: bold;
+        }
+
+        .project-card p {
+            margin: 5px 0;
+            font-size: 1em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>İclal Dere</h1>
+        <p>Computer Engineering Student & Web Developer</p>
+        <div class="theme-toggle-container">
+            <button id="theme-toggle" class="theme-toggle">&#9788;</button> <!-- icon: Sun -->
+        </div>
+    </header>
+    <nav>
+    <ul>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hello! I'm İclal, a computer engineering student at Kocaeli University. I am passionate about web development and technology. I enjoy learning new things and applying them in real-life projects.</p>
+    </section>
+    <section id="projects">
+        <h2>Projects</h2>
+        <div id="projects-container" class="projects-container">
+            <!-- GitHub repos -->
+        </div>
+    </section>
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>C, C++, Java, Python</li>
+            <li>Web Development: HTML, CSS, JavaScript</li>
+            <li>Database Management: MySQL</li>
+        </ul>
+    </section>
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <div class="gallery-container">
+            <img src="static/myApp/images/gallery1.jpg" alt="Gallery Image 1">
+            <img src="static/myApp/images/gallery2.jpg" alt="Gallery Image 2">
+            <img src="static/myApp/images/gallery3.jpg" alt="Gallery Image 3">
+            <!-- More images can be added -->
+        </div>
+    </section>
+    <section id="resume">
+        <h2>Resume</h2>
+        <p>You can download my resume by clicking the link below:</p>
+        <a href="static/myApp/documents/iclal_dere_resume.pdf" download>Download Resume (PDF)</a>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <form action="#" method="post">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>Connect with me:</p>
+        <a href="https://www.linkedin.com/in/icsie" target="_blank">LinkedIn</a>
+        <a href="https://www.instagram.com/icsie" target="_blank">Instagram</a>
+        <a href="https://open.spotify.com/user/bq5t51sn98db1j2liozghq5cm?si=379b4b53bb854947" target="_blank">Spotify</a>
+        <a href="https://www.youtube.com/@icsie" target="_blank">Youtube</a>
+        <a href="https://1000kitap.com/icsie" target="_blank">1000Kitap</a>
+        <a href="https://github.com/icsiee" target="_blank">GitHub</a>
+    </footer>
+    <script src="static/myApp/js/script.js"></script>
+    <script>
+        const toggleButton = document.getElementById('theme-toggle');
+        const stylesheet = document.getElementById('theme-stylesheet');
+
+        toggleButton.addEventListener('click', () => {
+            if (stylesheet.getAttribute('href') === 'static/myApp/css/dark-theme.css') {
+                stylesheet.setAttribute('href', 'static/myApp/css/light-theme.css');
+                toggleButton.innerHTML = '&#9728;'; // Sun icon
+            } else {
+                stylesheet.setAttribute('href', 'static/myApp/css/dark-theme.css');
+                toggleButton.innerHTML = '&#9788;'; // Moon icon
+            }
+        });
+
+        // Initial icon based on the current theme
+        if (stylesheet.getAttribute('href') === 'static/myApp/css/dark-theme.css') {
+            toggleButton.innerHTML = '&#9788;'; // Moon icon for dark theme
+        } else {
+            toggleButton.innerHTML = '&#9728;'; // Sun icon for light theme
+        }
+
+          document.addEventListener('DOMContentLoaded', function() {
+            const projectsContainer = document.getElementById('projects-container');
+            const username = 'icsiee'; // GitHub kullanıcı adınızı buraya girin
+
+            fetch(`https://api.github.com/users/${username}/repos`)
+                .then(response => response.json())
+                .then(data => {
+                    projectsContainer.innerHTML = data.map(repo => {
+                        // Tarih formatlama
+                        const createdDate = new Date(repo.created_at).toLocaleDateString();
+                        return `
+                            <div class="project-card">
+                                <h3><a href="${repo.html_url}" target="_blank">${repo.name}</a></h3>
+                                <p>Created: ${createdDate}</p>
+                                <p>Stars: ${repo.stargazers_count}</p>
+                            </div>
+                        `;
+                    }).join('');
+                })
+                .catch(error => {
+                    console.error('Error fetching GitHub repositories:', error);
+                    projectsContainer.innerHTML = '<p>Failed to load repositories.</p>';
+                });
+        });
+    </script>
+</body>
+</html>

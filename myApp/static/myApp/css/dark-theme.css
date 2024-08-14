@@ -1,0 +1,20 @@
+/* dark-theme.css */
+body {
+    background-color: #000000; /* Siyah */
+    color: #e0e0e0; /* Açık gri */
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    background-color: #333333; /* Koyu gri */
+    color: #e0e0e0; /* Açık gri */
+    background-image: url('static/myApp/images/resim_2024-08-12_143218113.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.footer {
+    background-color: #333333; /* Koyu gri */
+    color: #e0e0e0; /* Açık gri */
+}

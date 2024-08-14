@@ -1,0 +1,20 @@
+/* light-theme.css */
+body {
+    background-color: #ffffff;
+    color: #000000;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    background-color: #f5a623; /* Turuncu */
+    color: #ffffff;
+    background-image: url('static/myApp/images/night-sky-colorful-3840x2160-12510.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.footer {
+    background-color: #f5a623; /* Turuncu */
+    color: #ffffff;
+}

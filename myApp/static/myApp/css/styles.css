@@ -1,0 +1,115 @@
+/* Genel Ayarlar */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 16px; /* Varsayılan yazı boyutu */
+}
+
+header, nav, footer {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Genel gölge */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+section {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #007bff;
+    color: #ffffff;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.gallery-container img {
+    max-width: 30%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.gallery-container img:hover {
+    transform: scale(1.05);
+}
+
+/* Proje Kartı Ayarları */
+.projects-container {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    gap: 20px;
+}
+
+.project-card {
+    border-radius: 8px;
+    padding: 10px;
+    width: 300px;
+    min-width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+}
+
+.project-card a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.project-card .date {
+    color: inherit; /* Use the parent color */
+}
+
+
+
+
+h1 {
+    font-size: 3em; /* H1 boyutu */
+    margin: 0;
+}
+
+p {
+    font-size: 1.2em; /* Paragraf boyutu */
+}
+
