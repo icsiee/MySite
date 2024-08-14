@@ -39,7 +39,11 @@ footer {
     position: relative;
     bottom: 0;
     width: 100%;
+    background-color: #333333; /* Koyu gri */
+    color: #e0e0e0; /* Açık gri */
+    font-size: 0.9em;
 }
+
 
 button {
     margin-top: 20px;
@@ -100,9 +104,6 @@ button {
 .project-card .date {
     color: inherit; /* Use the parent color */
 }
-
-
-
 
 h1 {
     font-size: 3em; /* H1 boyutu */

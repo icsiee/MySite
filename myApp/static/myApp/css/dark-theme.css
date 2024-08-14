@@ -3,6 +3,7 @@ body {
     background-color: #000000; /* Siyah */
     color: #e0e0e0; /* Açık gri */
     font-family: Arial, sans-serif;
+    /* Varsayılan olarak dark-theme için diğer stil ayarları */
 }
 
 .header {

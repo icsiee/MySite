@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>İclal Dere</title>
+    <title>Iclal Dere</title>
     <link id="theme-stylesheet" rel="stylesheet" href="static/myApp/css/dark-theme.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
     <style>
@@ -25,12 +25,14 @@
 
         /* General Styles */
         header {
-            position: relative;
-            text-align: center;
-            padding: 50px 0;
-            background-size: cover;
-            color: #ffffff;
-        }
+    position: relative;
+    text-align: center;
+    padding: 50px 0;
+    background-size: cover;
+    background-image: url('static/myApp/images/resim_2024-08-12_143218113.jpg');
+    color: #ffffff;
+}
+
 
         .theme-toggle-container {
             position: absolute;
@@ -128,7 +130,7 @@
 </head>
 <body>
     <header>
-        <h1>İclal Dere</h1>
+        <h1>Iclal Dere</h1>
         <p>Computer Engineering Student & Web Developer</p>
         <div class="theme-toggle-container">
             <button id="theme-toggle" class="theme-toggle">&#9788;</button> <!-- icon: Sun -->
@@ -147,7 +149,7 @@
 
     <section id="about">
         <h2>About Me</h2>
-        <p>Hello! I'm İclal, a computer engineering student at Kocaeli University. I am passionate about web development and technology. I enjoy learning new things and applying them in real-life projects.</p>
+        <p>Hello! I'm Iclal, a computer engineering student at Kocaeli University. I am passionate about web development and technology. I enjoy learning new things and applying them in real-life projects.</p>
     </section>
     <section id="projects">
         <h2>Projects</h2>
@@ -196,11 +198,18 @@
         <a href="https://www.youtube.com/@icsie" target="_blank">Youtube</a>
         <a href="https://1000kitap.com/icsie" target="_blank">1000Kitap</a>
         <a href="https://github.com/icsiee" target="_blank">GitHub</a>
+
+<footer>
+    <p>© 2024 Iclal Dere</p>
+</footer>
+
     </footer>
     <script src="static/myApp/js/script.js"></script>
     <script>
         const toggleButton = document.getElementById('theme-toggle');
         const stylesheet = document.getElementById('theme-stylesheet');
+
+
 
         toggleButton.addEventListener('click', () => {
             if (stylesheet.getAttribute('href') === 'static/myApp/css/dark-theme.css') {
@@ -233,7 +242,6 @@
                             <div class="project-card">
                                 <h3><a href="${repo.html_url}" target="_blank">${repo.name}</a></h3>
                                 <p>Created: ${createdDate}</p>
-                                <p>Stars: ${repo.stargazers_count}</p>
                             </div>
                         `;
                     }).join('');
